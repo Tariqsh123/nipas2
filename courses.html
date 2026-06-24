@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | NIPAS</title>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+     <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.webp" alt="Logo">
+            </div>
+
+            <!-- Nav Menu -->
+            <ul class="nav-menu">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">NIPAS College</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Student Life</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- Apply Button -->
+            <div class="nav-btn">
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+    </script>
+
+
+<!-- <section class="other-page-hero">
+
+    <h1>NIPAS Courses</h1>
+
+</section> -->
+
+
+<section class="programs-section">
+
+    <div class="section-header">
+        <span class="section-tag">ACADEMIC PROGRAMS</span>
+            <h2>Explore Our <span>Programs</span> </h2>
+            <p>
+            Discover industry-focused academic pathways designed to prepare
+            students for successful careers in healthcare, technology,
+            management, and international education.
+        </p>
+    </div>
+
+    <div class="programs-grid">
+
+        <!-- Program 1 -->
+
+        <div class="program-card">
+
+            <div class="program-image">
+                <img src="images/Nursing-and-Midwifery-course-image.png" alt="">
+            </div>
+
+            <h3>Nursing & Midwifery</h3>
+
+            <p>
+                BS Nursing (BSN), BS Midwifery and professional healthcare
+                education programs.
+            </p>
+
+            <ul>
+                <li>Eligibility: Intermediate (Pre-Medical)</li>
+                <li>Clinical Training</li>
+                <li>High Demand Profession</li>
+            </ul>
+
+            <a href="nursing-and-midwifery-program.html">Learn More →</a>
+
+        </div>
+
+        <!-- Program 2 -->
+
+        <div class="program-card">
+
+            <div class="program-image">
+                <img src="images/Allied-Health-Sciences-course-image.png" alt="">
+            </div>
+
+            <h3>Allied Health Sciences</h3>
+
+            <p>
+                MLT, Anaesthesia, Radiography, DPT, Nutrition, Dental Tech
+                and Cosmetology programs.
+            </p>
+
+            <ul>
+                <li>Eligibility: FSC Pre-Medical</li>
+                <li>Hands-on Lab Training</li>
+                <li>Growing Healthcare Sector</li>
+            </ul>
+
+            <a href="allied-health-sciences-program.html">Learn More →</a>
+
+        </div>
+
+        <!-- Program 3 -->
+
+        <div class="program-card">
+
+            <div class="program-image">
+                <img src="images/Management-and-Entrepreneurship-course-image.jpeg" alt="">
+            </div>
+
+            <h3>Management & Entrepreneurship</h3>
+
+            <p>
+                BS Public Health and BS Healthcare Management for future
+                business and healthcare leaders.
+            </p>
+
+            <ul>
+                <li>Eligibility: Intermediate</li>
+                <li>Leadership Skills</li>
+                <li>Global Career Opportunities</li>
+            </ul>
+
+            <a href="management-and-entrepreneurship-program.html">Learn More →</a>
+
+        </div>
+
+        <!-- Program 4 -->
+
+        <div class="program-card">
+
+            <div class="program-image">
+                <img src="images/AI-and-Computing-course-image.png" alt="">
+            </div>
+
+            <h3>AI & Computing</h3>
+
+            <p>
+                BS Artificial Intelligence focused on machine learning,
+                data science and future technologies.
+            </p>
+
+            <ul>
+                <li>Eligibility: FSC / ICS</li>
+                <li>AI & Data Science Skills</li>
+                <li>Future-Proof Career Path</li>
+            </ul>
+
+            <a href="ai-and-computing-program.html">Learn More →</a>
+
+        </div>
+
+        <!-- Program 5 -->
+
+        <div class="program-card">
+
+            <div class="program-image">
+                <img src="images/International-Qualifications-course-image.png" alt="">
+            </div>
+
+            <h3>International Qualifications</h3>
+
+            <p>
+                Pearson BTEC, HNC, HND and international progression
+                pathways.
+            </p>
+
+            <ul>
+                <li>Globally Recognized</li>
+                <li>University Transfer Options</li>
+                <li>International Career Pathways</li>
+            </ul>
+
+            <a href="international-qualifications-program.html">Learn More →</a>
+
+        </div>
+
+        <!-- Program 6 -->
+
+        <div class="program-card">
+
+            <div class="program-image">
+                <img src="images/Languages-and-Test-Prep-course-image.png" alt="">
+            </div>
+
+            <h3>Languages & Test Prep</h3>
+
+            <p>
+                IELTS, PTE, OET, GRE, GAT, CSS, MDCAT and ECAT preparation
+                programs.
+            </p>
+
+            <ul>
+                <li>Expert Trainers</li>
+                <li>Mock Tests & Practice</li>
+                <li>Higher Success Rates</li>
+            </ul>
+
+            <a href="languages-and-test-prep-program.html">Learn More →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+
+        <div class="footer-col footer-about">
+
+            <img src="images/logo.webp" alt="NIPAS Logo" class="footer-logo">
+
+            <p>
+                Noble Institute of Professional & Applied Sciences (NIPAS) is committed
+                to excellence in higher education, innovation, healthcare,
+                artificial intelligence, entrepreneurship, and professional
+                development.
+            </p>
+
+            <div class="footer-social">
+
+    <a href="#">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+
+</div>
+        </div>
+
+        <!-- Column 2 -->
+
+        <div class="footer-col">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">About NIPAS</a></li>
+
+                <li><a href="#">Courses</a></li>
+
+                <li><a href="#">Case Studies</a></li>
+
+                <li><a href="#">NIPAS College</a></li>
+                <li><a href="#">International</a></li>
+
+                <li><a href="#">Research</a></li>
+                <li><a href="#">News</a></li>
+
+                <li><a href="#">Student Life</a></li>
+
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Column 3 -->
+
+        <div class="footer-col">
+
+    <h3>Contact Info</h3>
+
+    <ul class="contact-list">
+
+        <li>
+            <i class="fa-solid fa-location-dot"></i>
+             Shahpur Link Road/Raja Akhtar Road,Shahpur Barakahu, Islamabad
+        </li>
+
+        <li>
+            <i class="fa-solid fa-phone"></i>
+             0301 2881147
+        </li>
+
+        <li>
+            <i class="fa-solid fa-envelope"></i>
+             info.nipas@gmail.com
+
+        </li>
+
+        <li>
+            <i class="fa-solid fa-globe"></i>
+            www.nipas.edu.pk
+        </li>
+
+    </ul>
+
+</div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Noble Institute of Professional & Applied Sciences (NIPAS). All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+    
+</body>
+</html>

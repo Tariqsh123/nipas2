@@ -1603,3 +1603,685 @@
     }
 
 }
+
+
+
+.other-page-hero{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 10px;
+    background-color: #003d82;
+    color: white;
+    border-top: 1px solid white;
+    
+}
+
+
+
+
+
+.programs-pages-hero{
+    background:#fff;
+    padding:60px 5%;
+    overflow:hidden;
+}
+
+.programs-pages-container{
+    max-width:1400px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.programs-pages-content{
+    flex:1;
+    color:#003d82;
+}
+
+.programs-pages-tag{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:50px;
+    background:#e08e0027;
+    border:1px solid #e08f00;
+    color:#e08f00;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.programs-pages-content h1{
+    font-size:60px;
+    line-height:1.1;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.programs-pages-content p{
+    font-size:20px;
+    line-height:1.8;
+    color: black;
+    margin-bottom:35px;
+    max-width:700px;
+}
+
+.programs-pages-highlights{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.programs-pages-highlight{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    background:#e08e0025;
+    border:1px solid #e08f00;
+    padding:7px 20px;
+    border-radius: 30px;
+}
+
+.programs-pages-highlight i{
+    color:#003d82;
+    font-size:20px;
+}
+
+.programs-pages-highlight span{
+    font-size:15px;
+    font-weight:600;
+}
+
+.programs-pages-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.programs-pages-btn-primary{
+    padding:16px 34px;
+    background:#e08f00;
+    color:#fff;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.programs-pages-btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.programs-pages-btn-secondary{
+    padding:16px 34px;
+    border:2px solid #003d82;
+    color:#003d82;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.programs-pages-btn-secondary:hover{
+    background:#003d82;
+    color:white;
+}
+
+.programs-pages-image{
+    flex:1;
+    position:relative;
+}
+
+.programs-pages-image img{
+    width:100%;
+    border-radius:30px;
+    display:block;
+}
+
+.programs-pages-floating-card{
+    position:absolute;
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    min-width:180px;
+    text-align:center;
+    box-shadow:0 20px 50px gainsboro;
+}
+
+.programs-pages-floating-card i{
+    font-size:30px;
+    color:#e08f00;
+    margin-bottom:10px;
+}
+
+.programs-pages-floating-card h3{
+    color:#003d82;
+    font-size:30px;
+    margin-bottom:5px;
+}
+
+.programs-pages-floating-card p{
+    color:#666;
+    margin:0;
+    font-size:14px;
+}
+
+.programs-pages-card-1{
+    top:30px;
+    left:-40px;
+}
+
+.programs-pages-card-2{
+    bottom:30px;
+    right:-20px;
+}
+
+@media(max-width:992px){
+
+    .programs-pages-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .programs-pages-content h1{
+        font-size:50px;
+    }
+
+    .programs-pages-highlights{
+        justify-content:center;
+    }
+
+    .programs-pages-buttons{
+        justify-content:center;
+    }
+
+    .programs-pages-card-1,
+    .programs-pages-card-2{
+        display:none;
+    }
+}
+
+@media(max-width:576px){
+
+    .programs-pages-content h1{
+        font-size:40px;
+    }
+
+    .programs-pages-content p{
+        font-size:16px;
+    }
+
+    .programs-pages-highlight{
+        width:100%;
+        justify-content:center;
+    }
+}
+
+
+.programs-pages-overview{
+    padding:60px 5%;
+}
+
+.programs-pages-overview-container{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.programs-pages-overview-tag{
+    display:inline-block;
+    padding:12px 24px;
+    background:#edf3ff;
+    color:#003d82;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.programs-pages-overview h2{
+    font-size:50px;
+    color:#003d82;
+    font-weight:800;
+    margin-bottom:30px;
+}
+.programs-pages-overview h2 span{
+    color: #e08f00;
+}
+
+.programs-pages-overview-description{
+    font-size:18px;
+    line-height:1.9;
+    color:#666;
+    max-width:900px;
+    margin:0 auto 25px;
+}
+
+.programs-pages-overview-features{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.programs-pages-overview-feature{
+    background:#003d82;
+    padding:35px 25px;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,.1);
+    transition:.4s;
+}
+
+.programs-pages-overview-feature:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 50px rgba(0,61,130,.2);
+}
+
+.programs-pages-overview-feature i{
+    width:70px;
+    height:70px;
+    line-height:70px;
+    border-radius:50%;
+    background:rgba(255,255,255,.12);
+    color:#ffffff;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.programs-pages-overview-feature h4{
+    font-size:22px;
+    color:#ffffff;
+    margin-bottom:12px;
+    font-weight:700;
+}
+
+.programs-pages-overview-feature p{
+    color:rgba(255,255,255,.85);
+    line-height:1.8;
+    font-size:15px;
+}
+@media(max-width:992px){
+
+    .programs-pages-overview h2{
+        font-size:42px;
+    }
+
+    .programs-pages-overview-features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+    .programs-pages-overview h2{
+        font-size:34px;
+    }
+
+    .programs-pages-overview-description{
+        font-size:16px;
+    }
+
+    .programs-pages-overview-features{
+        grid-template-columns:1fr;
+    }
+
+}
+
+.programs-pages-highlights-section{
+    padding:60px 5%;
+}
+
+.programs-pages-highlights-container{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.programs-pages-highlights-tag{
+    display:inline-block;
+    padding:12px 24px;
+    background:#edf3ff;
+    color:#003d82;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.programs-pages-highlights-container h2{
+    font-size:50px;
+    line-height:1.2;
+    color:#003d82;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.programs-pages-highlights-container h2 span{
+    color: #e08f00;
+}
+.programs-pages-highlights-description{
+    font-size:18px;
+    line-height:1.9;
+    color:#666;
+    max-width:850px;
+    margin:0 auto 50px;
+}
+
+.programs-pages-highlights-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px 40px;
+    text-align:left;
+}
+
+.programs-pages-highlight-item{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    font-size:17px;
+    color:#333;
+    line-height:1.8;
+}
+
+.programs-pages-highlight-item i{
+    color:#e08f00;
+    margin-top:6px;
+    font-size:16px;
+}
+
+@media(max-width:768px){
+
+    .programs-pages-highlights-container h2{
+        font-size:36px;
+    }
+
+    .programs-pages-highlights-description{
+        font-size:16px;
+    }
+
+    .programs-pages-highlights-list{
+        grid-template-columns:1fr;
+    }
+
+}
+
+.programs-pages-outcomes{
+    background:#003d82;
+    padding:60px 5%;
+}
+
+.programs-pages-outcomes-container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+.programs-pages-outcomes-tag{
+    display:inline-block;
+    padding:12px 24px;
+    background:#e08f00;
+    color:#fff;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.programs-pages-outcomes h2{
+    color:#fff;
+    font-size:50px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.programs-pages-outcomes-description{
+    max-width:850px;
+    margin:0 auto 60px;
+    color:rgba(255,255,255,.85);
+    font-size:18px;
+    line-height:1.9;
+}
+
+.programs-pages-outcomes-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.programs-pages-outcome-item{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:30px 20px;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.programs-pages-outcome-item:hover{
+    transform:translateY(-8px);
+    background:#e08f00;
+}
+
+.programs-pages-outcome-item i{
+    display:block;
+    font-size:32px;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+@media(max-width:992px){
+
+    .programs-pages-outcomes-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .programs-pages-outcomes h2{
+        font-size:42px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .programs-pages-outcomes{
+        padding:80px 20px;
+    }
+
+    .programs-pages-outcomes-grid{
+        grid-template-columns:1fr;
+    }
+
+    .programs-pages-outcomes h2{
+        font-size:34px;
+    }
+
+    .programs-pages-outcomes-description{
+        font-size:16px;
+    }
+
+}
+
+
+.programs-pages-careers{
+    padding:60px 5%;
+    background:#fff;
+}
+
+.programs-pages-careers-container{
+    max-width:1200px;
+    margin:auto;
+    text-align:center;
+}
+
+.programs-pages-careers-tag{
+    display:inline-block;
+    padding:12px 24px;
+    background:#edf3ff;
+    color:#003d82;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.programs-pages-careers h2{
+    font-size:54px;
+    line-height:1.2;
+    color:#003d82;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.programs-pages-careers-description{
+    max-width:850px;
+    margin:0 auto 70px;
+    color:#666;
+    font-size:18px;
+    line-height:1.9;
+}
+
+.programs-pages-careers-showcase{
+    border-top:1px solid #e5eaf3;
+}
+
+.programs-pages-careers-row{
+    font-size:48px;
+    font-weight:800;
+    color:#003d82;
+    padding:30px 0;
+    border-bottom:1px solid #e5eaf3;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.programs-pages-careers-row:hover{
+    color:#e08f00;
+    padding-left:40px;
+    letter-spacing:1px;
+}
+
+@media(max-width:768px){
+
+   
+
+    .programs-pages-careers h2{
+        font-size:34px;
+    }
+
+    .programs-pages-careers-description{
+        font-size:16px;
+    }
+
+    .programs-pages-careers-row{
+        font-size:28px;
+        padding:22px 0;
+    }
+
+    .programs-pages-careers-row:hover{
+        padding-left:15px;
+    }
+}
+
+
+.programs-pages-admission{
+    padding:60px 5%;
+    background:#ffffff;
+}
+
+.programs-pages-admission-container{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+
+.programs-pages-admission-tag{
+    display:inline-block;
+    padding:12px 24px;
+    background:#e08f00;
+    color:#fff;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:25px;
+}
+
+.programs-pages-admission h2{
+    font-size:54px;
+    font-weight:800;
+    line-height:1.2;
+    color:#003d82;
+    margin-bottom:25px;
+}
+
+.programs-pages-admission-description{
+    max-width:850px;
+    margin:0 auto 60px;
+    color:#666;
+    font-size:18px;
+    line-height:1.9;
+}
+
+.programs-pages-admission-list{
+    border-top:1px solid #e8eef9;
+}
+
+.programs-pages-admission-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:28px 0;
+    border-bottom:1px solid #e8eef9;
+    transition:.3s;
+}
+
+.programs-pages-admission-item:hover{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.programs-pages-admission-label{
+    font-size:22px;
+    font-weight:700;
+    color:#003d82;
+}
+
+.programs-pages-admission-value{
+    font-size:18px;
+    color:#666;
+}
+
+@media(max-width:768px){
+
+
+    .programs-pages-admission h2{
+        font-size:34px;
+    }
+
+    .programs-pages-admission-description{
+        font-size:16px;
+    }
+
+    .programs-pages-admission-item{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+        padding:22px 0;
+    }
+
+    .programs-pages-admission-label{
+        font-size:18px;
+    }
+
+    .programs-pages-admission-value{
+        font-size:16px;
+    }
+}
