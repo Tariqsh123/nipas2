@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NIPAS</title>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+     <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/logo.webp" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Nav Menu -->
+            <ul class="nav-menu">
+                <li><a href="courses.html">Courses</a></li>
+                
+                <li><a href="nipas-college.html">NIPAS College</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+
+            <!-- Apply Button -->
+            <div class="nav-btn">
+                <a href="apply-now.html" class="apply-btn">Apply Now</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+    </script>
+
+
+<section class="other-page-hero">
+
+    <h1>About NIPAS</h1>
+
+</section>
+
+<section class="about-nipas">
+
+    <div class="about-wrapper">
+
+        <!-- Left Content -->
+
+        <div class="about-content">
+
+            <span class="about-tag">
+                ABOUT NIPAS
+            </span>
+
+            <h2>
+                Shaping <span> Future</span> Leaders Through
+                 <span> Innovation</span> & Excellence
+            </h2>
+
+            <p>
+                <strong>Noble Institute of Professional & Applied Sciences (NIPAS)</strong>
+                is an emerging higher education institution in Pakistan focused
+                on excellence in science, innovation, artificial intelligence,
+                health sciences, entrepreneurship, and professional education.
+            </p>
+
+            <p>
+                We are committed to developing future leaders, researchers,
+                and professionals through industry-oriented learning,
+                international collaboration, and research-driven education.
+            </p>
+
+            <div class="about-features">
+
+                <div class="feature-item">
+                    <span>✓</span>
+                    Academic Excellence
+                </div>
+
+                <div class="feature-item">
+                    <span>✓</span>
+                    International Collaboration
+                </div>
+
+                <div class="feature-item">
+                    <span>✓</span>
+                    Vibrant Student Life
+                </div>
+
+                <div class="feature-item">
+                    <span>✓</span>
+                    Research & Innovation
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Image -->
+
+        <div class="about-image">
+
+            <div class="image-box">
+                <img src="images/about-image.webp" alt="About NIPAS">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about-page-counter" id="about-page-counter">
+    <div class="about-page-counter-container">
+
+        <div class="about-page-counter-item">
+            <h2><span class="counter" data-target="50">0</span>K+</h2>
+            <p>Graduates</p>
+        </div>
+
+        <div class="about-page-counter-item">
+            <h2><span class="counter" data-target="8">0</span></h2>
+            <p>Campuses</p>
+        </div>
+
+        <div class="about-page-counter-item">
+            <h2><span class="counter" data-target="40">0</span>+</h2>
+            <p>Programs</p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const aboutPageCounters = document.querySelectorAll(".counter");
+
+const aboutPageObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+            let count = 0;
+
+            const updateCounter = () => {
+
+                const increment = Math.ceil(target / 100);
+
+                if(count < target){
+                    count += increment;
+
+                    if(count > target){
+                        count = target;
+                    }
+
+                    counter.innerText = count;
+
+                    requestAnimationFrame(updateCounter);
+
+                }else{
+                    counter.innerText = target;
+                }
+
+            };
+
+            updateCounter();
+
+            aboutPageObserver.unobserve(counter);
+
+        }
+
+    });
+});
+
+aboutPageCounters.forEach(counter=>{
+    aboutPageObserver.observe(counter);
+});
+</script>
+
+
+
+<section class="about-page-mission-vision" id="about-page-mission-vision">
+
+    <div class="about-page-mission-vision-container">
+
+        <div class="about-page-mission-box">
+            <span class="about-page-label">OUR MISSION</span>
+
+            <h2>
+                Empowering Future
+                <span>Healthcare Leaders</span>
+            </h2>
+
+            <p>
+                To deliver world-class education, innovative research,
+                and industry-focused training that prepares students
+                with the knowledge, skills, and global mindset required
+                to transform healthcare and professional industries.
+            </p>
+        </div>
+
+        <div class="about-page-vision-box">
+            <span class="about-page-label">OUR VISION</span>
+
+            <h2>
+                Creating a Global
+                <span>Center of Excellence</span>
+            </h2>
+
+            <p>
+                To become Pakistan's leading institution recognized
+                internationally for academic excellence, innovation,
+                digital transformation, and producing professionals
+                who create positive impact across the world.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="gallery-section">
+
+    <div class="section-header">
+        <span class="section-tag">CAMPUS GALLERY</span>
+            <h2>Life at <span>NIPAS</span> </h2>
+            <p>Explore our vibrant campus life, learning environments,
+            laboratories, events, and student experiences.</p>
+    </div>
+
+    <div class="swiper nipasGallery">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="images/gallery-1.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-2.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-3.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-4.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-5.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-6.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-7.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-8.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-9.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-10.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-11.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-12.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-13.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-14.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-15.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-16.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-17.webp" alt="">
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<script>
+    const gallerySwiper = new Swiper(".nipasGallery", {
+
+    loop:true,
+
+    speed:1000,
+
+    grabCursor:true,
+
+    centeredSlides:false,
+
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+
+    pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+    },
+
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+    },
+
+    breakpoints:{
+
+        0:{
+            slidesPerView:1,
+            spaceBetween:15
+        },
+
+        768:{
+            slidesPerView:2,
+            spaceBetween:20
+        },
+
+        1200:{
+            slidesPerView:3,
+            spaceBetween:25
+        }
+
+    }
+
+});
+</script>
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+
+        <div class="footer-col footer-about">
+
+            <img src="images/logo.webp" alt="NIPAS Logo" class="footer-logo">
+
+            <p>
+                Noble Institute of Professional & Applied Sciences (NIPAS) is committed
+                to excellence in higher education, innovation, healthcare,
+                artificial intelligence, entrepreneurship, and professional
+                development.
+            </p>
+
+            <div class="footer-social">
+
+    <a href="#">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+
+</div>
+        </div>
+
+        <!-- Column 2 -->
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About NIPAS</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="nipas-college.html">NIPAS College</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="apply-now.html">Apply Now</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+
+        <div class="footer-col">
+
+    <h3>Contact Info</h3>
+
+    <ul class="contact-list">
+
+        <li>
+            <i class="fa-solid fa-location-dot"></i>
+             Shahpur Link Road/Raja Akhtar Road,Shahpur Barakahu, Islamabad
+        </li>
+
+        <li>
+            <i class="fa-solid fa-phone"></i>
+             0301 2881147
+        </li>
+
+        <li>
+            <i class="fa-solid fa-envelope"></i>
+             info.nipas@gmail.com
+
+        </li>
+
+        <li>
+            <i class="fa-solid fa-globe"></i>
+            www.nipas.edu.pk
+        </li>
+
+    </ul>
+
+</div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Noble Institute of Professional & Applied Sciences (NIPAS). All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+    
+</body>
+</html>

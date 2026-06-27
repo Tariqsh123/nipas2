@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life | NIPAS</title>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+     <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../images/logo.webp" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Nav Menu -->
+            <ul class="nav-menu">
+                <li><a href="courses.html">Courses</a></li>
+                
+                <li><a href="nipas-college.html">NIPAS College</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+
+            <!-- Apply Button -->
+            <div class="nav-btn">
+                <a href="apply-now.html" class="apply-btn">Apply Now</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+    </script>
+
+
+<section class="other-page-hero">
+
+    <h1>Student Life</h1>
+
+</section>
+
+
+<section class="student-life-introduction" id="student-life-introduction">
+
+    <div class="student-life-container">
+        <h2>
+            A Dynamic Student Experience That
+            Inspires Learning, Leadership & Success
+        </h2>
+
+        <p class="student-life-lead">
+            At NIPAS, student life is about much more than earning a qualification.
+            It is an inspiring journey of academic excellence, personal growth,
+            professional development, and lifelong connections within a vibrant
+            learning community.
+        </p>
+
+        <p>
+            Every student becomes part of an inclusive environment where innovation,
+            collaboration, and creativity are encouraged every day. Through practical
+            learning experiences, leadership initiatives, cultural engagement, and
+            professional development activities, students develop the confidence and
+            skills required to succeed in today's rapidly evolving world.
+        </p>
+
+        <p>
+            Modern learning facilities, experienced faculty members, student-centered
+            support services, and a welcoming campus culture create an atmosphere where
+            learners are empowered to explore their potential both inside and outside
+            the classroom. Students are encouraged to participate in workshops,
+            seminars, competitions, community engagement projects, and collaborative
+            learning opportunities that enrich their educational journey.
+        </p>
+
+        <p>
+            Beyond academics, NIPAS nurtures communication, leadership, teamwork,
+            critical thinking, and ethical values that prepare graduates to become
+            responsible professionals and active contributors to society. Every
+            experience is designed to help students build meaningful relationships,
+            embrace innovation, and achieve excellence throughout their academic and
+            professional careers.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="gallery-section">
+
+    <div class="section-header">
+        <span class="section-tag">CAMPUS GALLERY</span>
+            <h2>Life at <span>NIPAS</span> </h2>
+            <p>Explore our vibrant campus life, learning environments,
+            laboratories, events, and student experiences.</p>
+    </div>
+
+    <div class="swiper nipasGallery">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="images/gallery-1.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-2.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-3.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-4.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-5.webp" alt="">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="images/gallery-6.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-7.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-8.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-9.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-10.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-11.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-12.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-13.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-14.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-15.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-16.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/gallery-17.webp" alt="">
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<script>
+    const gallerySwiper = new Swiper(".nipasGallery", {
+
+    loop:true,
+
+    speed:1000,
+
+    grabCursor:true,
+
+    centeredSlides:false,
+
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+
+    pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+    },
+
+    navigation:{
+        nextEl:".swiper-button-next",
+        prevEl:".swiper-button-prev",
+    },
+
+    breakpoints:{
+
+        0:{
+            slidesPerView:1,
+            spaceBetween:15
+        },
+
+        768:{
+            slidesPerView:2,
+            spaceBetween:20
+        },
+
+        1200:{
+            slidesPerView:3,
+            spaceBetween:25
+        }
+
+    }
+
+});
+</script>
+<section class="student-life-activities" id="student-life-activities">
+
+    <div class="student-life-activities-container">
+
+        <span class="student-life-activities-tag">
+            STUDENT ACTIVITIES
+        </span>
+
+        <h2>
+            Inspiring Growth Beyond
+            the Classroom
+        </h2>
+
+        <p>
+            Student life at NIPAS extends beyond academics through engaging activities,
+            leadership opportunities, and collaborative experiences that help students
+            develop confidence, creativity, teamwork, and lifelong skills.
+        </p>
+
+        <div class="student-life-activities-table-wrapper">
+
+            <table class="student-life-activities-table">
+
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-users"></i>
+                            Student Clubs
+                        </td>
+                        <td>
+                            Join academic, social, and interest-based clubs that encourage collaboration, networking, and personal development.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            Workshops & Seminars
+                        </td>
+                        <td>
+                            Participate in expert-led workshops, guest lectures, and professional seminars throughout the academic year.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-futbol"></i>
+                            Sports Activities
+                        </td>
+                        <td>
+                            Promote physical fitness, teamwork, and healthy competition through indoor and outdoor sporting events.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-masks-theater"></i>
+                            Cultural Events
+                        </td>
+                        <td>
+                            Celebrate diversity and creativity through festivals, performances, exhibitions, and student showcases.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-award"></i>
+                            Leadership Programs
+                        </td>
+                        <td>
+                            Build confidence and leadership abilities through mentoring, student councils, and development initiatives.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            Community Service
+                        </td>
+                        <td>
+                            Contribute to meaningful social impact through volunteer projects, awareness campaigns, and outreach programs.
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="student-life-learning" id="student-life-learning">
+
+    <div class="student-life-learning-container">
+
+        <span class="student-life-learning-tag">
+            LEARNING BEYOND ACADEMICS
+        </span>
+
+        <h2>
+            Preparing Students for Success Beyond the Classroom
+        </h2>
+
+        <p class="student-life-learning-lead">
+            At NIPAS, education extends beyond textbooks and lectures. We believe that true learning develops confident leaders, effective communicators, innovative thinkers, and responsible professionals who are prepared to make meaningful contributions to society. Our student-centered approach encourages individuals to explore their potential, embrace new challenges, and cultivate the skills required to thrive in an ever-changing global environment.
+        </p>
+
+        <p>
+            Leadership development is an integral part of the NIPAS experience. Students are encouraged to take initiative, collaborate on projects, participate in leadership opportunities, and contribute to academic and community activities that strengthen confidence, responsibility, and decision-making abilities. Through these experiences, learners develop the qualities necessary to inspire others and lead with integrity in both professional and personal settings.
+        </p>
+
+        <p>
+            Communication skills are equally essential in today's interconnected world. Students continuously enhance their written, verbal, and interpersonal communication through presentations, discussions, workshops, teamwork, and practical learning experiences. These opportunities help build confidence, improve professional interactions, and prepare graduates to communicate effectively within multidisciplinary and multicultural environments.
+        </p>
+
+        <p>
+            Innovation and critical thinking are embedded throughout the learning journey at NIPAS. Students are encouraged to question conventional ideas, explore creative solutions, analyze complex challenges, and apply evidence-based approaches to real-world situations. This culture of innovation empowers graduates to adapt confidently to technological advancements and emerging industry trends while maintaining ethical and professional standards.
+        </p>
+
+        <p>
+            Teamwork and collaboration remain fundamental to professional success across every discipline. Through group projects, research activities, community engagement, and practical training, students learn the importance of cooperation, respect, adaptability, and shared responsibility. These experiences foster meaningful relationships while preparing graduates to contribute effectively within diverse professional teams.
+        </p>
+
+        <p>
+            Entrepreneurship is another key pillar of the NIPAS learning philosophy. Students are encouraged to think creatively, identify opportunities, solve problems, and develop an entrepreneurial mindset capable of driving innovation and creating sustainable impact. By combining academic knowledge with practical experience and forward-thinking perspectives, graduates leave NIPAS equipped not only with professional expertise but also with the confidence, resilience, and lifelong learning mindset needed to succeed in an increasingly competitive global landscape.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="cta-2">
+
+    <div class="cta-2-content">
+
+        <span class="cta-2-tag">
+            ADMISSIONS OPEN 2026
+        </span>
+
+        <h2>
+            Your Future Starts
+            <span>at NIPAS</span>
+        </h2>
+
+        <p>
+            Take the next step toward a successful future with industry-focused
+            programs, expert faculty, modern learning environments, and
+            internationally aligned education pathways.
+        </p>
+
+        <div class="cta-2-buttons">
+
+            <a href="apply-now.html" class="cta-primary">
+                Apply Now
+            </a>
+
+            <a href="contact-us.html" class="cta-secondary">
+                Request Information
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Column 1 -->
+
+        <div class="footer-col footer-about">
+
+            <img src="images/logo.webp" alt="NIPAS Logo" class="footer-logo">
+
+            <p>
+                Noble Institute of Professional & Applied Sciences (NIPAS) is committed
+                to excellence in higher education, innovation, healthcare,
+                artificial intelligence, entrepreneurship, and professional
+                development.
+            </p>
+
+            <div class="footer-social">
+
+    <a href="#">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-x-twitter"></i>
+    </a>
+
+</div>
+        </div>
+
+        <!-- Column 2 -->
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About NIPAS</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="nipas-college.html">NIPAS College</a></li>
+                <li><a href="international.html">International</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="student-life.html">Student Life</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="apply-now.html">Apply Now</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+
+        <div class="footer-col">
+
+    <h3>Contact Info</h3>
+
+    <ul class="contact-list">
+
+        <li>
+            <i class="fa-solid fa-location-dot"></i>
+             Shahpur Link Road/Raja Akhtar Road,Shahpur Barakahu, Islamabad
+        </li>
+
+        <li>
+            <i class="fa-solid fa-phone"></i>
+             0301 2881147
+        </li>
+
+        <li>
+            <i class="fa-solid fa-envelope"></i>
+             info.nipas@gmail.com
+
+        </li>
+
+        <li>
+            <i class="fa-solid fa-globe"></i>
+            www.nipas.edu.pk
+        </li>
+
+    </ul>
+
+</div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Noble Institute of Professional & Applied Sciences (NIPAS). All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+    
+</body>
+</html>
